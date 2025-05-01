@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fire Game</title>
+    <link rel="stylesheet" href="fire_game_design.css" />
+  </head>
+  <body>
+    <div id="game">
+      <div class="timer-container"></div>
+      <h2>The Fire Game <span id="timer"></span></h2>
+      <p class="locations">
+        <strong>Location:</strong> <span id="locationText">Outside</span>
+      </p>
+      <p id="story">
+        Was dodging all those police blockades really worth this?<br />My house
+        stands in front of me, a raging fire threatening to engulf it.
+      </p>
+      <p id="movementText">
+        Should I <strong>enter house</strong>, or <strong>drive away</strong>?
+      </p>
+      <p class="locations">Inside this room is, <span id="theArray"></span></p>
+      <p id="quip"></p>
+      <input type="text" id="commandInput" placeholder="What should I do?" />
+      <button id="submit" onclick="processCommand()">Submit</button>
+      <audio
+        id="firesound"
+        src="media/FIRE SOUND EFFECT IN HIGH QUALITY.mp3"
+        loop
+        preload="auto"
+      ></audio>
+    </div>
+    <script src="fire_game_sample.js"></script>
+  </body>
+</html>
